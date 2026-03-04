@@ -212,15 +212,15 @@ nav a:hover{
     font-weight: 600;
     color: white;
     text-decoration: none;
+    border: none;
     border-radius: 40px;
-    background: linear-gradient(135deg, #9aa0a6, #6b8cff, #2575fc);
+    background: linear-gradient(135deg, #b0b3b8, #6b8cff, #2575fc);
     background-size: 200% 200%;
     transition: all 0.4s ease;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .btn-primary:hover {
     background-position: right center;
     transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
