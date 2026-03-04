@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="../CSS/hi.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<svg width="0" height="0">
+    <audio id="bgMusic" loop>
+    <source src="../FOTO/pancake.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const music = document.getElementById("bgMusic");
+music.volume = 0.35; 
+window.addEventListener("load", () => {
+    music.play().catch(() => {
+        console.log("Autoplay diblokir, menunggu klik...");
+    });
+});
+
+document.addEventListener("click", () => {
+    if (music.paused) {
+        music.play();
+    }
+}, { once: true });
+</script>
+
+        <svg width="0" height="0">
   <filter id="noise">
     <feTurbulence type="fractalNoise"
                   baseFrequency="0.005"
@@ -24,18 +44,20 @@
   </filter>
 </svg>
 
-<div id="loader">
+    <div id="loader">
     <h1 id="counter">0%</h1>
 </div>
 
 <header>
     <h2>Portofolio</h2>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="HTML/about.html">About</a>
-        <a href="HTML/kontak.html">Contact</a>
+        <a href="../index.html">Home</a>
+        <a href="../HTML/about.html">About</a>
+        <a href="../HTML/kontak.html">Contact</a>
     </nav>
 </header>
+
+<section class="contact-hero">
 
 <section class="contact-hero">
     <div class="contact-container">
@@ -47,42 +69,17 @@
         <div class="contact-right">
             <h1>Hi <span>Manda.</span></h1>
             <p>
-                Hi Amandaa, maybe this is kinda weird, but i just wanna tell you something about this foto. 
-                When i first saw your photo, i thought your eyes were really pretty, and i just wanna say that you are really pretty too.
-                Aku buat ini sebenernya cuma buat ngomong ini sih, karena aku malu jujur, tapi ya udahlah ya... 
-                Jangan lupa di review ya. Have a nice day Manda!
+                Hi Amandaa, maybe this is kinda weird, but i just wanna tell you somthing about this foto. 
+                When i first saw your photo, i thought yourr eyes were really pretty, and i just wanna say that you are really pretty too.
+                Aaku buat ini sebenernya cuma buatt ngomongg ini sihh, karena aku malu jujurr, tapi ya udahlah yaa... Jangan lupa
+                di review yaa. Havee a nicee dayy Mandaaa!
             </p>
+
         </div>
 
     </div>
 </section>
 
-<audio id="bgMusic" loop>
-    <source src="FOTO/pancake.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-const music = document.getElementById("bgMusic");
-music.volume = 0.35;
-
-window.addEventListener("load", () => {
-    music.play().catch(() => {
-        console.log("Autoplay diblokir, menunggu klik...");
-    });
-});
-
-document.addEventListener("click", () => {
-    if (music.paused) {
-        music.play();
-    }
-}, { once: true });
-</script>
-
-<script src="JS/script.js"></script>
-
+<script src="../JS/script.js"></script>
 </body>
 </html>
-
-
-
-
