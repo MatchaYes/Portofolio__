@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link rel="stylesheet" href="../CSS/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<svg width="0" height="0">
+  <filter id="noise">
+    <feTurbulence type="fractalNoise"
+                  baseFrequency="0.005"
+                  numOctaves="3"
+                  seed="2">
+      <animate attributeName="baseFrequency"
+               dur="20s"
+               values="0.005;0.008;0.005"
+               repeatCount="indefinite"/>
+    </feTurbulence>
+    <feColorMatrix type="saturate" values="1.5"/>
+  </filter>
+</svg>
+
+<div id="loader">
+    <h1 id="counter">0%</h1>
+</div>
+
+<header>
+    <h2>Portofolio</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="../HTML/about.html">About</a>
+        <a href="../HTML/kontak.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-left">
+        <div class="quote">"Avoid or just undertake it"</div>
+        <h1>Hi I'm <span>Alexander Rado</span></h1>
+        <p>
+            Seorang Mahasiswa Biasa Yang Suka Dengan Hal Baru, Salam Kenal!
+        </p>
+    </div>
+
+    <div class="hero-right">
+        <div class="profile-card" id="profileCard">
+            <h3>Alexander Rado</h3>
+            <p class="role">Mahasiswa</p>
+            <img src="../FOTO/rado.jpeg" alt="profile">
+            <div class="bottom-bar">
+                <span>@alexdr.ar • Online</span>
+                <button>Contact Me</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="bottom-glow"></div>
+
+<script src="../JS/script.js"></script>
+</body>
+</html>
