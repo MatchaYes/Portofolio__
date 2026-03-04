@@ -201,4 +201,26 @@ nav a:hover{
     background:radial-gradient(circle,#6d28d9,transparent 70%);
     filter:blur(120px);
     opacity:.4;
+
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    background: linear-gradient(135deg, #9aa0a6, #6b8cff, #2575fc);
+    background-size: 200% 200%;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.btn-primary:hover {
+    background-position: right center;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
